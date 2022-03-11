@@ -5,7 +5,7 @@ O que são e como trabalhar com Arrays no JavaScript
 Um array é uma estrutura de dados que segue uma sequência não ordenada, onde os elementos ficam armazenados em uma posição isolada e o acesso é realizado à partir de índices para cada posição de cada item e que são gerados automáticamente na inclusão de cada elemento no array.  
 Eles são utilizados para armazenar uma lista de elementos dentro deles e esses elementos podem ser de quaisquer formato e ou tipo.  
 
-![Project Gif](./images/arrays.jpg). 
+![Project Gif](./images/estrutura_de_arrays.png). 
 
 Dessa forma você pode armazenar muitos valores refenciados com um único nome de variável e acessa-los através do seu índice. 😉
 

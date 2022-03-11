@@ -17,7 +17,7 @@ Você [cria uma variável normal em JavaScript](https://github.com/Atanes-Trybe/
   let numerosPares = [2, 4, 6, 8, 10];
 ```
 ## Acessando e modificando os elementos de um Array
-Para acessar um elemento de um array só precisamos utilizar o índice da posição do elemento, exemplo:
+Para acessar o valor de um elemento de um array só precisamos utilizar o índice da posição do elemento, exemplo:
 
 ```javascript
   let nomesPessoasEstudantes = ['Alexandre', 'Adriana', 'Michelle', 'Teresa', 'Cláudio'];
@@ -29,4 +29,82 @@ Para acessar um elemento de um array só precisamos utilizar o índice da posiç
   console.log(soma)
   // A saída desse comando seria 14, pois estamos somando o valor que está no indice 0 do array de numeros, que é o número 13, com o valor
   // que está na posição 4 do array de numeros que é o número 1.
+```
+
+Para modificar o valor de um elemento especifico do um array, também vamos utilizar seu índice no momento de fazer uma nova atribuição, exemplo:
+
+```javascript
+  let nomesPessoasEstudantes = ['Alexandre', 'Adriana', 'Michelle', 'Teresa', 'Cláudio'];
+  nomesPessoasEstudantes[0] = 'Carol';
+  console.log(nomesPessoasEstudantes[0])
+  // A saída desse comando seria Carol, pois esse é o novo valor para o indice 0 do array nomesPessoasEstudantes após a atribuição do novo valor 
+  // que fizemos com o comando nomesPessoasEstudantes[0] = 'Carol';.
+  
+  let numeros = [13, 6, 87, 10, 1, 5];
+  numeros[4] = 7;
+  let soma = numeros[0] + numeros[4];
+  console.log(soma)
+  // A saída desse comando seria 20, pois estamos somando o valor que está no indice 0 do array de numeros, que é o número 13, com o novo valor
+  // da posição 4 do array de numeros que é o número 7 após a atribuição do novo valor que fizemos com o comando numeros[4] = 7;.
+```
+Para acessar todos os elementos do array ao mesmo tempo utilizamos o nome da variável que usamos para criar o array, exemplo:
+```javascript
+  let nomesPessoasEstudantes = ['Alexandre', 'Adriana', 'Michelle', 'Teresa', 'Cláudio'];
+  console.log(nomesPessoasEstudantes)
+  // A saída desse comando seria ['Alexandre', 'Adriana', 'Michelle', 'Teresa', 'Cláudio'].
+  
+  let numeros = [13, 6, 87, 10, 1, 5];
+  console.log(numeros)
+  // A saída desse comando seria [13, 6, 87, 10, 1, 5].
+```
+## Proriedades e Métodos de Arrays em JavaScript
+
+### A Propriedade length
+
+A propriedade length de um Array retorna o tamanho de um Array (o número de elementos do Array).
+```javascript
+  let numeros = [13, 6, 87, 10, 1, 5];
+  console.log(numeros.length);
+  // A saída desse comando é 6, pois o array numeros tem 6 elementos armazenados dentro dele.
+  
+  // Para acessar o valor do primeiro elemento do array podemos usar o indice 0 e para acessar o valor do ultimo elemento do array
+  // podemos usar o indice array.length - 1.
+  console.log(numeros[0]);
+  console.log(numeros[numeros.length - 1]);
+```
+
+### Método para adicionar um novo elemento ao array
+
+Para adicionar um novo elemento **no final** do array podemos utilizar o método `push()`, exemplo:
+```javascript
+  let nomesPessoasEstudantes = ['Alexandre', 'Adriana', 'Michelle', 'Teresa', 'Cláudio'];
+  nomesPessoasEstudantes.push('Rodolfo');
+  console.log(nomesPessoasEstudantes)
+  // A saída desse comando é ['Alexandre', 'Adriana', 'Michelle', 'Teresa', 'Cláudio','Rodolfo'] com o novo elemento adicionado no final do array
+```
+
+### Método para remover um elemento do array
+
+Para remover **o ultimo** elemento de um array podemos utilizar o método `pop()`:
+```javascript
+  let frutas = ["Banana", "Laranja", "Maça", "Manga", "Abacate"];
+  frutas.pop();
+  console.log(frutas)
+  // A saída desse comando é ["Banana", "Laranja", "Maça", "Manga"] com o ultimo elemento (Abacate) removido do array
+```
+
+### Método para converter o array em uma string
+
+Podemos usar  método `toString()` para converter um array em uma string com os valores dos seus elementos separados por vírgula.
+```javascript
+  let frutas = ["Banana", "Laranja", "Maça", "Manga", "Abacate"];
+  console.log(frutas.toString())
+  // A saída desse comando é Banana,Laranja,Maça,Manga.
+```
+
+Também podemos usar o método `join()` para converter um array em uma string, a diferença é que nesse método podemos especificar qual separador queremos usar.
+```javascript
+  let frutas = ["Banana", "Laranja", "Maça", "Manga", "Abacate"];
+  console.log(frutas.join(" - ")
+  // A saída desse comando é Banana - Laranja - Maça - Manga.
 ```

@@ -83,6 +83,14 @@ Para adicionar um novo elemento **no final** do array podemos utilizar o método
   // A saída desse comando é ['Alexandre', 'Adriana', 'Michelle', 'Teresa', 'Cláudio','Rodolfo'] com o novo elemento adicionado no final do array
 ```
 
+Para adicionar um novo elemento no início do array e "deslocar" os elementos mais antigos podemos usar o método `unshift()`, exemplo.  
+```javascript
+  let nomesPessoasEstudantes = ['Alexandre', 'Adriana', 'Michelle', 'Teresa', 'Cláudio'];
+  nomesPessoasEstudantes.unshift('Rodolfo');
+  console.log(nomesPessoasEstudantes)
+  // A saída desse comando é ['Rodolfo','Alexandre', 'Adriana', 'Michelle', 'Teresa', 'Cláudio'] com o novo elemento adicionado no início do array.
+```
+
 ### Método para remover um elemento do array
 
 Para remover **o ultimo** elemento de um array podemos utilizar o método `pop()`:
@@ -92,6 +100,46 @@ Para remover **o ultimo** elemento de um array podemos utilizar o método `pop()
   console.log(frutas)
   // A saída desse comando é ["Banana", "Laranja", "Maça", "Manga"] com o ultimo elemento (Abacate) removido do array
 ```
+
+Os elementos do array também podem ser excluídos usando o operador JavaScript `delete`, mas nesse caso deixamos a posição do elemento no array com um undefined como valor.
+
+```javascript
+  let frutas = ["Banana", "Laranja", "Maça", "Manga", "Abacate"];
+  delete frutas[0];
+  console.log(frutas)
+  // A saída desse comando é [undefined, "Laranja", "Maça", "Manga", "Abacate"] com o undefined no lugar de Banana.
+```
+### Método para adicionar e remover elementos em um array
+Temos um método que pode ser utilizado para adicionar um novo elemento ao array ou para fazer a remoção de um elemento do array, esse método é o `slice()`. 👏🏻
+
+Exemplos:
+
+**Adicionar elementos**
+```javascript
+  let frutas = ["Banana", "Laranja", "Maça", "Manga", "Abacate"];
+  frutas.slice(3,0,'Uva','Morango');
+  console.log(frutas)
+  // A saída desse comando é ["Banana", "Laranja", "Maça", "Manga", "Uva", "Morango", "Abacate"] com a inclusão de Uva e Morango depois da terceira posição do array.
+```
+O primeiro parâmetro (3) define a posição onde novos elementos devem ser adicionados (spliced ​​in).
+
+O segundo parâmetro (0) define quantos elementos devem ser removidos .
+
+O resto dos parâmetros ('Uva','Morango') definem os novos elementos a serem adicionados .
+
+
+**Remover elementos**
+```javascript
+  let frutas = ["Banana", "Laranja", "Maça", "Manga", "Abacate"];
+  frutas.slice(2,2);
+  console.log(frutas)
+  // A saída desse comando é ["Banana", "Laranja", "Abacate"] com a exclusao de Maça e Manga, os dois elementos a partir da posição 2 do array.
+```
+O primeiro parâmetro (2) define a posição onde novos elementos devem ser adicionados (spliced ​​in).
+
+O segundo parâmetro (2) define quantos elementos devem ser removidos .
+
+Os demais parâmetros são omitidos. Nenhum novo elemento será adicionado.
 
 ### Método para converter o array em uma string
 
@@ -105,6 +153,14 @@ Podemos usar  método `toString()` para converter um array em uma string com os 
 Também podemos usar o método `join()` para converter um array em uma string, a diferença é que nesse método podemos especificar qual separador queremos usar.
 ```javascript
   let frutas = ["Banana", "Laranja", "Maça", "Manga", "Abacate"];
-  console.log(frutas.join(" - ")
+  console.log(frutas.join(" - "))
   // A saída desse comando é Banana - Laranja - Maça - Manga.
+```
+
+### Método para inverter a ordem do array
+Quando queremos inverter a ordem de um array podemos usar o método `reverse()`, exemplo.
+```javascript
+  let frutas = ["Banana", "Laranja", "Maça", "Manga", "Abacate"];
+  console.log(frutas.reverse())
+  // A saída desse comando é ["Abacate", "Manga", "Maça", "Laranja", "Banana"].
 ```

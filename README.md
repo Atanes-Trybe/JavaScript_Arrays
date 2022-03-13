@@ -215,3 +215,6 @@ no laço de repetição e que faz a iteração do primeiro ao ultimo elemento do
 // Fruta:  Maçã
 // Fruta:  Manga
 ```
+
+Mais informações sobre Arrays no JavaScript você pode consultar o [W3Schools](https://www.w3schools.com/js/js_arrays.asp) ou o [MDN Web Docs community](
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array)

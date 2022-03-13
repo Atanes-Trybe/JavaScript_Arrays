@@ -174,3 +174,44 @@ Quando queremos inverter a ordem de um array podemos usar o método `reverse()`,
   console.log(frutas.reverse())
   // A saída desse comando é ["Abacate", "Manga", "Maça", "Laranja", "Banana"].
 ```
+
+### Iterando (caminhando) sobre os elementos do array
+Existem várias formas de iterar (caminhar) sobre os elementos de um array, a forma mais simples e direta é usando um laço de repetição e vamos ver dois exemplos 
+usando o `for` (tradicional e for of).
+
+Com o `for` tradicional podemos caminhar pelos elementos do array usando uma variável de controle para os indices do array, exemplo:
+```javascript
+  let frutas = ['Banana', 'Morango', 'Amora', 'Laranja', 'Limao', 'Maçã', 'Manga'];
+  for (let index = 0; index < frutas.length; index += 1){
+      console.log('Fruta: ', frutas[index]);
+  }
+
+// Usando a variável index para referenciar cada indice do array e fazendo o controle dessa variável até o tamanho do array e com passo de 1 em 1, a 
+// saída desse comando é:
+// Fruta:  Banana
+// Fruta:  Morango
+// Fruta:  Amora
+// Fruta:  Laranja
+// Fruta:  Limao
+// Fruta:  Maçã
+// Fruta:  Manga
+```
+
+Outra forma de iterar de forma simples e direta sobre os valores do array é usando o `for of` onde cada elemento é referenciado por uma variável criado 
+no laço de repetição e que faz a iteração do primeiro ao ultimo elemento do array de forma sequencial.
+
+```javascript
+  let frutas = ['Banana', 'Morango', 'Amora', 'Laranja', 'Limao', 'Maçã', 'Manga'];
+  for (fruta of frutas){
+      console.log('Fruta: ', fruta);
+  }
+
+// A estrutura desse laço for é bem mais simples e o resultado é o mesmo do for tradicional:
+// Fruta:  Banana
+// Fruta:  Morango
+// Fruta:  Amora
+// Fruta:  Laranja
+// Fruta:  Limao
+// Fruta:  Maçã
+// Fruta:  Manga
+```

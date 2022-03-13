@@ -157,6 +157,16 @@ Também podemos usar o método `join()` para converter um array em uma string, a
   // A saída desse comando é Banana - Laranja - Maça - Manga - Abacate.
 ```
 
+### Método para copiar parte do array
+Se quisermos fazer uma cópia do array, ou parte dele, podemos usar o método slice() que retorna uma cópia do array a partir de um subarray criado entre as posições início e fim (fim não é necessário) do array original, sendo que o Array original não é modificado nesse processo e o resultado final é um **novo** array.
+```javascript
+  // Exemplo para extrair 'Laranja' e 'Limao' do array frutas
+  let frutas = ['Banana', 'Morango', 'Amora', 'Laranja', 'Limao', 'Maçã', 'Manga'];
+  let frutasVermelhas = frutas.slice(1, 3);
+  console.log(frutasVermelhas);
+  // A saída desse somando seria ['Morango', 'Amora'] que é o conteúdo do novo array frutasVermelas
+```
+
 ### Método para inverter a ordem do array
 Quando queremos inverter a ordem de um array podemos usar o método `reverse()`, exemplo.
 ```javascript

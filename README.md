@@ -110,16 +110,16 @@ Os elementos do array também podem ser excluídos usando o operador JavaScript 
   // A saída desse comando é [undefined, "Laranja", "Maça", "Manga", "Abacate"] com o undefined no lugar de Banana.
 ```
 ### Método para adicionar e remover elementos em um array
-Temos um método que pode ser utilizado para adicionar um novo elemento ao array ou para fazer a remoção de um elemento do array, esse método é o `slice()`. 👏🏻
+Temos um método que pode ser utilizado para adicionar um novo elemento ao array ou para fazer a remoção de um elemento do array, esse método é o `splice()`. 👏🏻
 
 Exemplos:
 
 **Adicionar elementos**
 ```javascript
   let frutas = ["Banana", "Laranja", "Maça", "Manga", "Abacate"];
-  frutas.slice(3,0,'Uva','Morango');
+  frutas.splice(3,0,'Uva','Morango');
   console.log(frutas)
-  // A saída desse comando é ["Banana", "Laranja", "Maça", "Manga", "Uva", "Morango", "Abacate"] com a inclusão de Uva e Morango depois da terceira posição do array.
+  // A saída desse comando é ["Banana", "Laranja", "Maça", "Uva", "Morango", "Manga", "Abacate"] com a inclusão de Uva e Morango depois da terceira posição do array.
 ```
 O primeiro parâmetro (3) define a posição onde novos elementos devem ser adicionados (spliced ​​in).
 
@@ -131,7 +131,7 @@ O resto dos parâmetros ('Uva','Morango') definem os novos elementos a serem adi
 **Remover elementos**
 ```javascript
   let frutas = ["Banana", "Laranja", "Maça", "Manga", "Abacate"];
-  frutas.slice(2,2);
+  frutas.splice(2,2);
   console.log(frutas)
   // A saída desse comando é ["Banana", "Laranja", "Abacate"] com a exclusao de Maça e Manga, os dois elementos a partir da posição 2 do array.
 ```
@@ -147,14 +147,14 @@ Podemos usar  método `toString()` para converter um array em uma string com os 
 ```javascript
   let frutas = ["Banana", "Laranja", "Maça", "Manga", "Abacate"];
   console.log(frutas.toString())
-  // A saída desse comando é Banana,Laranja,Maça,Manga.
+  // A saída desse comando é Banana,Laranja,Maça,Manga,Abacate.
 ```
 
 Também podemos usar o método `join()` para converter um array em uma string, a diferença é que nesse método podemos especificar qual separador queremos usar.
 ```javascript
   let frutas = ["Banana", "Laranja", "Maça", "Manga", "Abacate"];
   console.log(frutas.join(" - "))
-  // A saída desse comando é Banana - Laranja - Maça - Manga.
+  // A saída desse comando é Banana - Laranja - Maça - Manga - Abacate.
 ```
 
 ### Método para inverter a ordem do array

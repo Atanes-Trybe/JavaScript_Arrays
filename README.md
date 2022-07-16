@@ -1,7 +1,7 @@
 # Repositório: JavaScript_Arrays
 O que são e como trabalhar com Arrays no JavaScript
 
-## O que são Arrays na programação
+## O que são Arrays na programação? 🤔
 Um array é uma estrutura de dados que segue uma sequência não ordenada, onde os elementos ficam armazenados em uma posição isolada e o acesso é realizado à partir de índices para cada posição de cada item e que são gerados automáticamente na inclusão de cada elemento no array.  
 Eles são utilizados para armazenar uma lista de elementos dentro deles e esses elementos podem ser de quaisquer formato e ou tipo.  
 
@@ -217,4 +217,6 @@ no laço de repetição e que faz a iteração do primeiro ao ultimo elemento do
 ```
 
 Mais informações sobre Arrays no JavaScript você pode consultar o [W3Schools](https://www.w3schools.com/js/js_arrays.asp) ou o [MDN Web Docs community](
-https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array)
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array). 🧑‍🏫
+
+Obs.: Sua contribuição é sempre bem vinda, por isso, se tiver alguma sugestão de melhoria e ou recomendação de ajuste/mudança das informações desse repositório, fique a vontade para abrir uma [ISSUE](https://github.com/Atanes-Trybe/JavaScript_Arrays/issues) que ficarei muito feliz em receber suas sugestões, criticas e comentários!! 😊
